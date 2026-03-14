@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Título Principal del Documento | Portafolio</title> <!-- [debe tener el mismo título que el markdown, indicado por el # inicial] -->
+
+  <!-- Fuentes (fallbacks: Century Gothic local, Montserrat/EB Garamond desde Google) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Iconos (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <meta name="description" content="Artículo detallado sobre un tema.">
+</head>
+<body class="bg-white text-dark">
+
+
+<!-- navbar [fijo, siempre debe estar] -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand text-dark" href="../index.html"> Página </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-white py-5 header-grad">
+  <div class="container">
+    <h1 class="display-5 serif">Título Principal del Documento</h1> <!-- [debe tener el mismo título que el markdown, indicado por el # inicial] -->
+        <p class="lead mb-0">Introducción</p>
+  </div>
+</header>
+
+<main class="container my-5">
+  <article class="row gy-4">
+
+    <!-- Contenido principal -->
+    <div class="col-12 col-lg-8">
+
+    <figure class="mb-4">
+        <img src="imagen1.png"
+            class="img-fluid grayscale w-100 rounded article-image"
+            alt="Imagen post">
+        <figcaption class="text-muted small mt-2">
+            Figura 1. Imagen post
+        </figcaption>
+    </figure>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis laoreet nulla, 
+      quis consequat sapien commodo in. Phasellus sed sem arcu. Etiam tempus sem at ligula 
+      viverra eleifend. Proin ullamcorper, justo in pellentesque venenatis, massa massa finibus 
+      mauris, quis pellentesque lorem lectus sed ipsum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor venenatis odio, 
+      a posuere elit cursus et. Pellentesque euismod magna nec gravida eleifend.</p>
+      <h3>Tabla de ejemplo</h3>
+      <table>
+      <thead>
+      <tr>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Manzanas</td>
+      <td>5</td>
+      <td>$3.50</td>
+      </tr>
+      <tr>
+      <td>Naranjas</td>
+      <td>8</td>
+      <td>$4.20</td>
+      </tr>
+      <tr>
+      <td>Peras</td>
+      <td>4</td>
+      <td>$2.90</td>
+      </tr>
+      </tbody>
+      </table>
+      <h2>Sección Intermedia</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo neque et ligula rutrum 
+      faucibus. Curabitur suscipit ipsum vel ligula bibendum, nec accumsan elit malesuada. Donec 
+      gravida nibh sed arcu finibus, sed gravida justo porta.</p>
+      <p>Sed in pulvinar ex. Maecenas sit amet risus id mauris pretium placerat. Vestibulum non urna 
+      sit amet elit fringilla imperdiet quis ac leo.</p>
+      <p>    <figure class="mb-4">
+              <img src="imagen2.png"
+                  class="img-fluid grayscale w-100 rounded article-image"
+                  alt="Imagen post">
+              <figcaption class="text-muted small mt-2">
+                  Figura 2. Imagen post
+              </figcaption>
+          </figure></p>
+      <h3>Lista de elementos</h3>
+      <ul>
+      <li>Elemento uno de ejemplo</li>
+      <li>Elemento dos con más texto para que se vea mejor</li>
+      <li>Elemento tres final</li>
+      </ul>
+      <h2>Ejemplo de Código en Python</h2>
+      <p>A continuación un bloque de código genérico:</p>
+      <p><pre class="p-3 bg-light border rounded"><code class="python">def procesar_datos(lista):
+          resultados = []
+          for elemento in lista:
+              if validar(elemento):
+                  resultados.append(transformar(elemento))
+          return resultados
+      
+      def validar(x):
+          return isinstance(x, int) and x &gt; 0
+      
+      def transformar(x):
+          return x * 2
+      
+      print(procesar_datos([1, -3, 5, 10]))</code></pre></p>
+
+      <!-- Autor / meta [siempre debe estar, la fecha debe ser en la que se generó el archivo] -->
+      <div class="mt-4 pt-3 border-top">
+        <p class="mb-1 small text-muted">Autor: .</p>
+        <p class="mb-0 small text-muted">Última actualización: 2025-12-10</p> 
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="col-12 col-lg-4">
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="card-title serif">Resumen rápido</h5>
+          <p class="card-text small text-muted">Un conjunto de puntos clave, enlaces a recursos y referencias. Este bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.</p>
+          <a href="index.html#proyectos" class="btn btn-outline-dark btn-sm">Ver proyectos relacionados</a>
+        </div>
+      </div>
+
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Enlaces</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a class="text-dark" href="https://github.com/usuario/proyecto-ejemplo" target="_blank">Repositorio del ejemplo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Contacto</h6>
+          <p class="small text-muted mb-1">Email: <a class="text-dark" href="mailto:correo@mail.cl">correo@mail.cl</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+  </article>
+</main>
+
+<!-- [todo lo que queda, es fijo] -->
+<footer class="bg-white border-top py-3">
+  <div class="container text-center small text-muted">
+    © 2025 —  C. — <a class="text-dark" href="https://github.com/" target="_blank">GitHub</a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery (opcional, si tu sitio usa scripts con jQuery) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Si necesitas, aquí puedes añadir scripts específicos para esta página -->
+</body>
+</html>

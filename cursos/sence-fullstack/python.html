@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portafolio - Daniel C.</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="bg-white text-dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand text-dark" href="../../index.html"> Daniel C.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#sobre-mi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-white py-5 header-grad">
+    <div class="container">
+      <h1 class="display-5 serif">Portafolio (?)</h1>
+      <p class="lead mb-0">Ciencias sociales, python, artes.
+        <br>
+        <i>(en construcción)</i>
+      </p>
+    </div>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container-fluid my-5 row">
+    <!-- Tarjetas proyectos -->
+    <section id="proyectos" class="col-12 col-lg-9">
+      <h2>Capacitación sence</h2>
+      <p class="p-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit maiores totam non quasi nostrum laborum natus hic doloremque quisquam ipsum vero facere, delectus temporibus eveniet aliquid dolor culpa. Aut voluptatibus autem eum assumenda temporibus ad fugit tenetur? Accusantium mollitia voluptatibus temporibus omnis aut modi totam nam maiores excepturi earum laudantium minus facilis minima non neque eligendi possimus veritatis esse voluptatum eum assumenda numquam tempora, repudiandae ut? Ea nemo deleniti magnam culpa vitae nostrum autem reiciendis quos minus? Ea esse laudantium odio non minima nihil asperiores ullam quibusdam hic dolores. Aliquid, cum tempore qui molestiae earum veritatis quibusdam eaque atque culpa.</p>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="h4 serif">Evaluaciones</h3>
+        <div>
+          <button class="btn btn-outline-dark btn-sm filter-btn active" data-filter="all">Todos</button>
+          <button class="btn btn-outline-dark btn-sm filter-btn" data-filter="python">Python</button>
+          <button class="btn btn-outline-dark btn-sm filter-btn" data-filter="web">Web</button>
+          <button class="btn btn-outline-dark btn-sm filter-btn" data-filter="JS">JS</button>
+          <button class="btn btn-outline-dark btn-sm filter-btn" data-filter="SQL">SQL</button>
+          <button class="btn btn-outline-dark btn-sm filter-btn" data-filter="django">django</button>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="projects-grid">
+
+        <!-- Tarjeta M3-->
+        <div class="col project-card" data-tags="python">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_3.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto M3: Gestor de tareas, Python</h5>
+              <p class="card-text text-muted small">Permite agregar, listar, completar y eliminar tareas mediante un
+                menú interactivo desde la terminal.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/m3_evaluacion_modulo" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M3: Gestor de tareas, Python"
+                  data-desc="Aplicación de línea de comandos que permite agregar, listar, completar y eliminar tareas usando listas y diccionarios. Incluye validación de entradas, manejo seguro de archivos y un menú interactivo para una experiencia simple y funcional desde la terminal."
+                  data-image="img/modulo_3.png" data-repo="https://github.com/Adniel-sama/m3_evaluacion_modulo">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta M4-->
+        <div class="col project-card" data-tags="python">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_4.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto M4: Gestor biblioteca, Python</h5>
+              <p class="card-text text-muted small">Gestor de biblioteca en Python que administra libros físicos y
+                digitales, permitiendo agregar, buscar, prestar, devolver y eliminar, con almacenamiento persistente.
+              </p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/m4_evaluacion_modulo" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M4: Gestor biblioteca, Python"
+                  data-desc="Este proyecto implementa un gestor de biblioteca en Python utilizando Programación Orientada a Objetos, con clases para libros físicos y digitales y métodos accesores basados en @property para garantizar encapsulamiento sin exponer setters directos. Incluye manejo avanzado de errores mediante excepciones personalizadas y bloques try/except para controlar fallos en operaciones críticas como carga, guardado, préstamo y devolución. El sistema usa serialización de objetos en archivos de texto, validaciones robustas de entrada, manipulación segura de índices y un menú interactivo que organiza todas las operaciones CRUD desde la consola."
+                  data-image="img/modulo_4.png" data-repo="https://github.com/Adniel-sama/m4_evaluacion_modulo">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta M5-->
+        <div class="col project-card" data-tags="SQL">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_5.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto M5: Ventas, SQL</h5>
+              <p class="card-text text-muted small"> Proyecto SQL que modifica la estructura de una base de datos
+                mediante alteraciones de tablas, eliminación, truncado y ajustes controlados para mantener integridad
+                referencial. </p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/m5_evaluacion_modulo" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M5: Gestor biblioteca, Python"
+                  data-desc="El proyecto aplica operaciones SQL de modificación estructural, incluyendo ALTER TABLE, DROP TABLE y TRUNCATE, considerando restricciones e integridad referencial. Se enfoca en la actualización controlada del esquema y en la gestión segura de datos conforme a buenas prácticas de administración de bases de datos relacionales."
+                  data-image="img/modulo_5.png" data-repo="https://github.com/Adniel-sama/m5_evaluacion_modulo">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta M6-->
+        <div class="col project-card" data-tags="python web django">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_6.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto M6: Gestor de tareas, Django</h5>
+              <p class="card-text text-muted small"> Aplicación sencilla para gestionar tareas, permitiendo crear,
+                editar, marcar como completadas y eliminar actividades dentro de una interfaz web organizada y fácil de
+                usar. </p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/evaluacion_modulo6" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M6: Gestor de tareas, Django"
+                  data-desc="Gestor de Tareas es una aplicación web diseñada para organizar actividades de manera clara y eficiente. Permite crear nuevas tareas, asignar detalles relevantes y editarlas cuando sea necesario. Incluye opciones para marcar tareas como completadas o pendientes, ofreciendo seguimiento del progreso. Los usuarios pueden eliminar tareas finalizadas o innecesarias, manteniendo la lista siempre actualizada. La aplicación utiliza templates para las vistas, forms para la captura de datos, y models para el almacenamiento en base de datos. Incorpora control de usuarios mediante el modelo Auth de Django, incluyendo autenticación y permisos. Su objetivo es facilitar la administración personal o académica de actividades mediante una interfaz web intuitiva."
+                  data-image="img/modulo_6.png" data-repo="https://github.com/Adniel-sama/evaluacion_modulo6">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta M7-->
+        <div class="col project-card" data-tags="python web django">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_7.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto M7: Inventario, Django</h5>
+              <p class="card-text text-muted small"> Sistema de gestión de inventario que permite administrar productos
+                y categorías mediante una aplicación Django conectada a MySQL. </p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/M7_evaluacion_modulo" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M7: Inventario, Django"
+                  data-desc="Este proyecto es una aplicación de inventario desarrollada con Django, organizada en vistas basadas en clases para gestionar productos y categorías. Utiliza formularios (Forms y ModelForms) para crear y editar registros de manera validada. La autenticación de usuarios controla el acceso a las operaciones principales del sistema. La base de datos está gestionada mediante MySQL, configurada a través del ORM de Django para manejar modelos y migraciones. También incluye templates con herencia y mensajes integrados con el sistema de django.contrib.messages. El proyecto aplica buenas prácticas de arquitectura, separación en apps y manejo de rutas mediante path()"
+                  data-image="img/modulo_7.png" data-repo="https://github.com/Adniel-sama/M7_evaluacion_modulo">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta Proyecto final-->
+        <div class="col project-card" data-tags="python web django SQL JS">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="img/modulo_8.png" class="card-img-top grayscale img-fluid" alt="Proyecto 1 screenshot">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Proyecto final: lugares de estudio</h5>
+              <p class="card-text text-muted small"> Este proyecto es una aplicación web desarrollada con Django 6 que
+                permite a los usuarios gestionar y explorar lugares de estudio, crear listas personalizadas y escribir
+                reseñas sobre los lugares que visitan. </p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <a href="https://github.com/Adniel-sama/M7_evaluacion_modulo" target="_blank"
+                  class="btn btn-dark btn-sm">Ver repositorio</a>
+                <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                  data-title="Proyecto M7: Inventario, Django"
+                  data-desc="Este proyecto es una aplicación web para gestionar y explorar, permite a los usuarios registrar lugares, añadir reseñas, asignar calificaciones y etiquetar los espacios según sus características, con el objetivo de que se puedan compartir experiencias e información, de manera que se puedan encontrar los lugares más adecuados para cada persona. Los usuarios pueden visualizar información detallada, filtrar por etiquetas (para lo cual tienen total libertad, quizá demasiada) y ver estadísticas agregadas de calificaciones."
+                  data-image="img/modulo_7.png" data-repo="https://github.com/Adniel-sama/M7_evaluacion_modulo">
+                  Ver detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Se pegarán más tarjetas aquí -->
+       
+      </div>
+    </section>
+    <!-- Sidebar -->
+    <!-- [la primera card, la configuraré más adelante, así que de momento, puedes copiarla e insertarla tal cual] -->
+    <aside class="col-12 m-2 m-lg-0 col-lg-3 p-3 sidebar">
+      <h3 class="text-dark">Pefil</h3>
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="card-title serif">Resumen rápido</h5>
+          <p class="card-text small text-muted">Un conjunto de puntos clave, enlaces a recursos y referencias. Este
+            bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.</p>
+          <a href="index.html#proyectos" class="btn btn-outline-dark btn-sm">Ver proyectos relacionados</a>
+        </div>
+      </div>
+
+      <!-- [debe estar siempre presente el primer enlace a github, los otros debes sacarlos del archivo. Si no hay, omítelos] -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Enlaces</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a class="text-dark" href="https://github.com/usuario/proyecto-ejemplo" target="_blank">Repositorio del
+                ejemplo</a></li>
+            <li><a class="text-dark" href="#">Documento técnico (PDF)</a></li>
+            <li><a class="text-dark" href="#">Referencia externa</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- [card fija] -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Contacto</h6>
+          <p class="small text-muted mb-1">Email: <a class="text-dark" href="mailto:correo@mail.cl">correo@mail.cl</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <section id="sobre-mi" class="mt-5">
+      <h2 class="h4 serif">Sobre mí</h2>
+      <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, magni sit! Animi, dolor ea..
+      </p>
+    </section>
+
+    <section id="contacto" class="mt-5 mb-5">
+      <h2 class="h4 serif">Contacto</h2>
+      <p class="text-muted">Email: <a class="text-dark" href="mailto:tu@email.cl">daniel.cifuentes.b@gmail.com</a></p>
+    </section>
+
+  </main>
+
+
+
+  <footer class="bg-white border-top py-3">
+    <div class="container text-center small text-muted">
+      © 2025 — Daniel C. — <a class="text-dark" href="https://github.com/adniel-sama" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title serif" id="modalTitle">Título</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="" class="img-fluid grayscale mb-3 modal-img">
+          <p id="modalDesc">Descripción</p>
+          <p>
+            <strong>Enlaces:</strong>
+            <a id="modalRepo" href="#" target="_blank" class="text-dark">Repositorio</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

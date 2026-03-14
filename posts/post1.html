@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artículo — Tema detallado | Portafolio</title> <!-- [debe tener el mismo título que el markdown, indicado por el # inicial] -->
+
+  <!-- Fuentes (fallbacks: Century Gothic local, Montserrat/EB Garamond desde Google) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Iconos (opcional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <meta name="description" content="Artículo detallado sobre un tema.">
+</head>
+<body class="bg-white text-dark">
+
+
+<!-- navbar [fijo, siempre debe estar] -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container">
+    <a class="navbar-brand text-dark" href="../index.html"> Página </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#sobre-mi">Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-white py-5 header-grad">
+  <div class="container">
+    <h1 class="display-5 serif">Título del Artículo: Tema Detallado</h1> <!-- [debe tener el mismo título que el markdown, indicado por el # inicial] -->
+    <p class="lead mb-0">Subtítulo breve o resumen en una línea — fecha · categoría</p> <!-- [debe tener el mismo título que el markdown, indicado por el ## o ### debajo del título inicial, si no existe, omítelo] -->
+  </div>
+</header>
+
+<main class="container my-5">
+  <article class="row gy-4">
+
+    <!-- Contenido principal -->
+    <div class="col-12 col-lg-8">
+
+      <!-- Imagen destacada [es la primera imagen, otras imágenes deben seguir el mismo formato]-->      
+    <figure class="mb-4">
+        <img src="imagen1.png"
+            class="img-fluid grayscale w-100 rounded article-image"
+            alt="Imagen post">
+        <figcaption class="text-muted small mt-2">
+            Figura 1. Imagen descriptiva (placeholder)
+        </figcaption>
+    </figure>
+
+
+      <!-- Secciones con texto genérico [textos de ejemplo] -->
+      <section class="mb-4">
+        <h2 class="h5 serif">1. Contexto y motivación</h2>
+        <p>Texto de ejemplo para ocupar espacio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non eros at nunc tempor efficitur. Proin luctus, arcu a tincidunt cursus, augue neque dictum urna, vitae vehicula nibh risus in lacus. Sed tempus, nunc a hendrerit posuere, sapien purus interdum lorem, at ultrices magna orci vitae turpis.</p>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h5 serif">2. Conceptos clave</h2>
+        <p>Otro párrafo de ejemplo con contenido técnico ficticio. Fusce sit amet magna in sem pulvinar cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc gravida, sapien at efficitur commodo, augue orci volutpat lectus, at congue odio lorem a augue.</p>
+
+        <ul>
+          <li>Concepto A — explicación breve.</li>
+          <li>Concepto B — explicación breve.</li>
+          <li>Concepto C — explicación breve.</li>
+        </ul>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h5 serif">3. Ejemplo práctico</h2>
+        <p>Se describe un flujo o un ejemplo de uso. Etiam non arcu vitae justo suscipit scelerisque non ut elit. Cras ac nisl vel magna vestibulum varius.</p>
+
+        <pre class="p-3 bg-light border rounded"><code># Ejemplo de código (placeholder)
+def ejemplo():
+    print('Ejemplo práctico')
+</code></pre>
+      </section>
+
+      <section class="mb-4">
+        <h2 class="h5 serif">4. Conclusiones</h2>
+        <p>Resumen final y posibles extensiones del tema. Nulla facilisi. Aliquam at sapien a sapien malesuada faucibus. Integer id velit nec sapien efficitur pretium.</p>
+      </section>
+
+      <!-- Autor / meta [siempre debe estar, la fecha debe ser en la que se generó el archivo] -->
+      <div class="mt-4 pt-3 border-top">
+        <p class="mb-1 small text-muted">Autor: .</p>
+        <p class="mb-0 small text-muted">Última actualización: 2025-12-10</p> 
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+     <!-- [la primera card, la configuraré más adelante, así que de momento, puedes copiarla e insertarla tal cual] -->
+    <aside class="col-12 col-lg-4">
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="card-title serif">Resumen rápido</h5>
+          <p class="card-text small text-muted">Un conjunto de puntos clave, enlaces a recursos y referencias. Este bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.</p>
+          <a href="index.html#proyectos" class="btn btn-outline-dark btn-sm">Ver proyectos relacionados</a>
+        </div>
+      </div>
+
+      <!-- [debe estar siempre presente el primer enlace a github, los otros debes sacarlos del archivo. Si no hay, omítelos] -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Enlaces</h6>
+          <ul class="list-unstyled small mb-0">
+            <li><a class="text-dark" href="https://github.com/usuario/proyecto-ejemplo" target="_blank">Repositorio del ejemplo</a></li>
+            <li><a class="text-dark" href="#">Documento técnico (PDF)</a></li>
+            <li><a class="text-dark" href="#">Referencia externa</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- [card fija] -->
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h6 class="mb-2 serif">Contacto</h6>
+          <p class="small text-muted mb-1">Email: <a class="text-dark" href="mailto:correo@mail.cl">correo@mail.cl</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+  </article>
+</main>
+
+<!-- [todo lo que queda, es fijo] -->
+<footer class="bg-white border-top py-3">
+  <div class="container text-center small text-muted">
+    © 2025 —  C. — <a class="text-dark" href="https://github.com/" target="_blank">GitHub</a>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery (opcional, si tu sitio usa scripts con jQuery) -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Si necesitas, aquí puedes añadir scripts específicos para esta página -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+:root{
+  --font-sans: "Century Gothic", "Montserrat", Arial, sans-serif;
+  --font-serif: "Garamond", "EB Garamond", Georgia, serif;
+}
+
+/* Tipografías */
+body { font-family: var(--font-sans); }
+.serif, h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Header */
+.header-grad{
+  background: linear-gradient(135deg, #000 0%, #3d3d3d 100%);
+}
+
+/* Imágenes en escala de grises */
+.grayscale { filter: grayscale(50%); }
+
+/* Tarjetas suavemente animadas */
+.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+/* Enlaces */
+a.text-dark:hover { color: #212121; text-decoration: none; }
+
+/* Botón seleccionado */
+.filter-btn.active {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+.modal-img {
+  max-height: 40vh;   /* nunca ocupar más del 60% de la pantalla */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.sidebar {
+    background-color: #e4e4e4; /* gris claro */
+    border-radius: 4px;       /* bordes redondeados */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.4); /* sombra ligera */
+    padding: 1rem;             /* opcional, para separar contenido del borde */
+    min-height: 100vh;
+}
+
+.firma {
+  position: absolute;   /* posición relativa al aside */
+  bottom: 0;            /* esquina inferior */
+  right: 0;             /* esquina derecha */
+  margin: 1rem;         /* separación de los bordes */ 
+}
+
+.svgblanco {
+  filter: invert(1);
+}
+
+/* ####### POSTS ######### */
+
+.article-image {
+  max-height: 50vh;   /* límite proporcional de altura */
+  width: auto;        /* permite mantener proporción */
+  height: auto;       /* evita deformación */
+  max-width: 100%;    /* no se desborda */
+  object-fit: contain; /* no recorta NUNCA */
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: 30vh;   /* máximo un cuadrado */
+  object-fit: contain;   /* no deformar */
+}
+
+/* Tablas */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+th { font-weight: 600; }
+tr:nth-child(even) { background: #fafafa; }
+
+/* Ajuste mobile */
+@media (max-width: 576px){
+  .display-5 { font-size: 1.6rem; }
+  .lead {
+    font-size: 0.8rem;
+  }
+}
