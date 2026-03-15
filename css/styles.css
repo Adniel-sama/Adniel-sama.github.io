@@ -49,14 +49,21 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
     box-shadow: 4px 4px 8px rgba(0,0,0,0.4); /* sombra ligera */
     padding: 1rem;             /* opcional, para separar contenido del borde */
     min-height: 100vh;
+    
+    display:flex;
+    flex-direction:column;
 }
 
 .firma {
-  position: absolute;   /* posición relativa al aside */
-  bottom: 0;            /* esquina inferior */
-  right: 0;             /* esquina derecha */
-  margin: 1rem;         /* separación de los bordes */ 
+  position: absolute;  
+  bottom: 0;            
+  right: 0;            
+  margin: 1rem;    
+  max-width: 40%;
+  height: auto;
 }
+
+
 
 .svgblanco {
   filter: invert(1);
