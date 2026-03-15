@@ -63,8 +63,6 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
   height: auto;
 }
 
-
-
 .svgblanco {
   filter: invert(1);
 }
