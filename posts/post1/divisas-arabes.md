@@ -1,9 +1,28 @@
+---
+author: Daniel C.
+date: 2025-12-11
+tags: 
+   - medio-oriente
+   - lengua-arabe
+summary: Un conjunto de puntos clave, enlaces a recursos y referencias. Este bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.
+---
+
 # El origen lingüístico de las denominaciones de las divisas árabes
 ### Historia y mapa. 
 
-![[mapa-divisas.png]]
+![Mapa de las divisas en los países árabes](mapa-divisas.png)
 
 De los varios nombres que tienen las distintas divisas árabes, sólo una es de origen árabe, la de Mauritania. El resto, son préstamos de lenguas extranjeras:
+
+| Transliteración | Árabe | Nombre original  | Idioma original |
+| --------------- | ----- | ---------------- | --------------- |
+| Dinar           | دينار | Dēnārius         | Latín           |
+| Lira            | ليرة  | Lira             | Italiano        |
+| Riyal           | ريال  | Real             | Español         |
+| Dirham          | درهم  | Drakhma (δραχμή) | Griego          |
+| Gineh           | جنيه  | Guinea           | Inglés          |
+| Ouguiya         | أوقية | Ouguiya (أوقية)  | Árabe           |
+| Shekel          | شيقل  | Shekel (שקל)     | Hebreo          |
 
 **Dinar (دينار):**
 La moneda de Argelia, Túnez, Libia, Jordania, Iraq, Kuwait, y Baréin. Viene de "denarius", el denario romano. Seguramente se introdujo al árabe a través del arameo, que era lengua franca en la zona del levante en el momento del surgimiento del Islam, y de la conquista árabe del levante.
@@ -28,12 +47,4 @@ Es el único nombre de origen árabe, y significa onza.
 __\*Shekel:__
 No es la moneda del Estado de palestina, sino de Israel, pero es la de mayor circulación en los territorios palestinos, y aunque no sea su moneda oficial, lo es de facto. 
 
-| Transliteración | Árabe | Nombre original  | Idioma original |
-| --------------- | ----- | ---------------- | --------------- |
-| Dinar           | دينار | Dēnārius         | Latín           |
-| Lira            | ليرة  | Lira             | Italiano        |
-| Riyal           | ريال  | Real             | Español         |
-| Dirham          | درهم  | Drakhma (δραχμή) | Griego          |
-| Gineh           | جنيه  | Guinea           | Inglés          |
-| Ouguiya         | أوقية | Ouguiya (أوقية)  | Árabe           |
-| Shekel          | شيقل  | Shekel (שקל)     | Hebreo          |
+
