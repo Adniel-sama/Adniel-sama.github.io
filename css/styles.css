@@ -114,6 +114,13 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
   object-fit: contain;   /* no deformar */
 }
 
+.imagen{
+  max-height: 30vh;
+  width: auto;
+  object-fit: contain; 
+}
+
+
 .modal-content {
   position: relative; /* necesario para posicion absoluta de flechas */
 
@@ -149,12 +156,17 @@ th { font-weight: 600; }
 tr:nth-child(even) { background: #fafafa; }
 
 /* Ajuste mobile */
-@media (max-width: 576px){
+@media (max-width: 768px){
   .display-5 { font-size: 1.6rem; }
   .lead {
     font-size: 0.8rem;
 
   }
+
+  .card-text{
+    font-size: 0.8rem;
+  }
+
   .arrow-left, .arrow-right{
     bottom: 15px;
     top: auto;
@@ -171,13 +183,13 @@ tr:nth-child(even) { background: #fafafa; }
   .arrow-right{
     left: calc(50% + 12px);
   }
-    #projects-grid {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
 
-  #projects-grid > .col {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  .imagen{
+    max-height: 50vh;
   }
+  
+}
+
+@media (min-width: 769px) {
+
 }
