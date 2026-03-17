@@ -23,7 +23,7 @@ table {
 }
 
 /* Imágenes en escala de grises */
-.grayscale { filter: grayscale(50%); }
+.grayscale { filter: grayscale(30%); }
 
 /* Tarjetas suavemente animadas */
 .card { transition: transform .18s ease, box-shadow .18s ease; }
@@ -37,6 +37,10 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
   background: #000 !important;
   color: #fff !important;
   border-color: #000 !important;
+}
+
+#modalContent{
+  max-height: 85%;
 }
 
 .modal-img {
@@ -62,6 +66,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
 .avatar-container{
   display:flex;
   justify-content:center;
+  
 }
 
 .avatar{
@@ -77,6 +82,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
 .avatar:hover{
   transform:translateY(-2px);
   filter:brightness(1.05);
+  
 }
 
 .firma {
@@ -110,6 +116,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
 
 .modal-content {
   position: relative; /* necesario para posicion absoluta de flechas */
+
 }
 
 .modal-arrow{

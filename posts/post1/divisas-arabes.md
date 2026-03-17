@@ -5,6 +5,7 @@ tags:
    - medio-oriente
    - lengua-arabe
 summary: Un conjunto de puntos clave, enlaces a recursos y referencias. Este bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.
+links: 
 ---
 
 # El origen lingüístico de las denominaciones de las divisas árabes
