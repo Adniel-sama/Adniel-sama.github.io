@@ -171,4 +171,13 @@ tr:nth-child(even) { background: #fafafa; }
   .arrow-right{
     left: calc(50% + 12px);
   }
+    #projects-grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #projects-grid > .col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
