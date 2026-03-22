@@ -7,6 +7,8 @@
 body { font-family: var(--font-sans); }
 .serif, h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif); }
 
+
+
 table {
   font-size: 0.8rem;
   width: 90%;
@@ -33,6 +35,12 @@ table {
 a.text-dark:hover { color: #212121; text-decoration: none; }
 
 /* Botón seleccionado */
+
+.btn{
+  border-radius: 0px;
+
+}
+
 .filter-btn.active {
   background: #000 !important;
   color: #fff !important;
@@ -58,6 +66,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
     box-shadow: 4px 4px 8px rgba(0,0,0,0.4); /* sombra ligera */
     padding: 1rem;             /* opcional, para separar contenido del borde */
     min-height: 100vh;
+    height: 100%;
     
     display:flex;
     flex-direction:column;
@@ -94,6 +103,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
   height: auto;
 }
 
+
 .svgblanco {
   filter: invert(1);
 }
@@ -115,7 +125,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
 }
 
 .imagen{
-  max-height: 30vh;
+  max-height: 20vh;
   width: auto;
   object-fit: contain; 
 }
@@ -123,8 +133,9 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
 
 .modal-content {
   position: relative; /* necesario para posicion absoluta de flechas */
-
 }
+
+
 
 .modal-arrow{
   position: absolute;
