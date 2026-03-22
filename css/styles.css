@@ -28,8 +28,14 @@ table {
 .grayscale { filter: grayscale(30%); }
 
 /* Tarjetas suavemente animadas */
-.card { transition: transform .18s ease, box-shadow .18s ease; }
+.card { 
+  transition: transform .18s ease, box-shadow .18s ease; 
+}
 .card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+/* .project-card{
+  margin-bottom: 1rem;
+} */
 
 /* Enlaces */
 a.text-dark:hover { color: #212121; text-decoration: none; }
