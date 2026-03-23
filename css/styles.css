@@ -30,12 +30,12 @@ table {
 /* Tarjetas suavemente animadas */
 .card { 
   transition: transform .18s ease, box-shadow .18s ease; 
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4) !important;
+  /* border-radius: 0 !important; */
 }
+
 .card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
 
-/* .project-card{
-  margin-bottom: 1rem;
-} */
 
 /* Enlaces */
 a.text-dark:hover { color: #212121; text-decoration: none; }
@@ -70,7 +70,7 @@ a.text-dark:hover { color: #212121; text-decoration: none; }
     background-color: #e4e4e4; /* gris claro */
     border-radius: 4px;       /* bordes redondeados */
     box-shadow: 4px 4px 8px rgba(0,0,0,0.4); /* sombra ligera */
-    padding: 1rem;             /* opcional, para separar contenido del borde */
+    padding: 1rem;
     min-height: 100vh;
     height: 100%;
     
