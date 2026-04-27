@@ -1,21 +1,5 @@
-# Portafolio 
-## Evaluación portafolio módulo 2
+# Página personal
 
-Estructura básica del portafolio, usando HTML, CSS, bootstrap, JS, y JQuery tal como lo indican los requerimientos de la evaluación del portafolio del módulo 2.
+## Descripción
 
-Archivos preparados: `index.html`, `css/styles.css`, `js/script.js`, carpeta `img/`.
-
-## Evaluación portafolio módulo 3
-Agrega el trabajo final del módulo 3 al portafolio como card.
-
-## Evaluación portafolio módulo 4
-Agrega el trabajo final del módulo 4 "gestor_biblioteca" al portafolio, se ven cosas como POO, manejo de errores, etc...
-
-## Evaluación portafolio módulo 5
-Agrega el trabajo final del módulo 5, base de datos de una empresa de ventas, JOINS, SELECTS, COMMIT, ROLLBACK, etc...
-
-## Evaluación portafolio módulo 6
-Agrega el trabajo final del módulo 6, "Gestor de tareas", configuración de settings.py, urls.py, uso de templates, usuarios, etc...
-
-## Evaluación portafolio módulo 7
-Agrega el trabajo final del módulo 7, "Inventario", configuración de settings.py, urls.py, uso de templates, admin, conexión bases de datos, paths, etc...
+Publico sobre mis intereses, mis hobbies y lo que sé hacer.
