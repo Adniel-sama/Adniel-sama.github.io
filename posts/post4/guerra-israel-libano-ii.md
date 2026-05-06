@@ -1,3 +1,11 @@
+---
+author: Daniel C.
+date: 2025-04-05
+tags: 
+   - medio-oriente
+   - libano
+summary: Un conjunto de puntos clave, enlaces a recursos y referencias. Este bloque puede contener enlaces a proyectos relacionados, descargas o bibliografía.
+---
 # La guerra sectaria de Israel contra el Líbano:
 ## parte 2
 
